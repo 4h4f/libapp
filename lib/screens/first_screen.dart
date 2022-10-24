@@ -77,7 +77,7 @@ class _FirstScreenState extends State<FirstScreen> {
               ),
             ),
             const SizedBox(
-              height: 10,
+              height: 6,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -91,6 +91,125 @@ class _FirstScreenState extends State<FirstScreen> {
                   onTap: () {},
                 )
               ],
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            SizedBox(
+              height: 300,
+              width: double.infinity,
+              //color: Colors.purple,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Column(
+                    children: [
+                      Container(
+                        height: 200,
+                        width: 150,
+                        //color: Colors.teal,
+                        decoration: BoxDecoration(
+                            color: Colors.teal.withOpacity(.2),
+                            borderRadius: BorderRadius.circular(10)),
+                        child: Center(
+                          child: Container(
+                            height: 150,
+                            width: 100,
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(10),
+                              child: Image.asset(
+                                'assets/img/book1.jpg',
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      SizedBox(
+                        height: 80,
+                        width: 150,
+                        child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "Memory",
+                                  style: Theme.of(context).textTheme.titleLarge,
+                                ),
+                                const SizedBox(
+                                  height: 6,
+                                ),
+                                const Text(
+                                  "By Tomas John",
+                                  style: TextStyle(color: Colors.grey),
+                                )
+                              ],
+                            )
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      Container(
+                        height: 200,
+                        width: 150,
+                        //color: Colors.teal,
+                        decoration: BoxDecoration(
+                            color: Colors.teal.withOpacity(.2),
+                            borderRadius: BorderRadius.circular(10)),
+                        child: Center(
+                          child: SizedBox(
+                            height: 150,
+                            width: 100,
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(10),
+                              child: Image.asset(
+                                'assets/img/book2.jpg',
+                                fit: BoxFit.cover,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      const SizedBox(
+                        height: 10,
+                      ),
+                      SizedBox(
+                        height: 80,
+                        width: 150,
+                        child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "The King ",
+                                  style: Theme.of(context).textTheme.titleLarge,
+                                ),
+                                const SizedBox(
+                                  height: 6,
+                                ),
+                                const Text(
+                                  "By Tomas John",
+                                  style: TextStyle(color: Colors.grey),
+                                )
+                              ],
+                            )
+                          ],
+                        ),
+                      )
+                    ],
+                  ),
+                ],
+              ),
             ),
           ],
         ),

@@ -63,7 +63,7 @@ flutter:
   assets:
     - assets/icons/hamburger.svg
     - assets/icons/hamburger1.png
-    - assets/img/habib.jpg
+    - assets/img/
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

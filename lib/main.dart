@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
           appBarTheme: const AppBarTheme(
               color: Colors.white,
               iconTheme: IconThemeData(color: Colors.black))),
-      home: FirstScreen(),
+      home: const FirstScreen(),
     );
   }
 }
